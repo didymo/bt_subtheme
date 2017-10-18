@@ -1,0 +1,220 @@
+/* Navbar design */
+.nav > li.active a,
+.nav > li > a:hover,
+.nav > li > a:focus {
+    background-color: initial;
+}
+.navbar-toggle .icon-bar {
+    background-color: #333;
+}
+/* Menu multilevel */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    padding: 0px;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu > a:after {
+    content: "\e080";
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-size: 10px;
+    float: right;
+    margin-top: 5px;
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+.navbar-nav li:last-child > .dropdown-menu {
+    left: 0px;
+    right: auto;
+}
+.navbar-nav li:last-child > .dropdown-menu a {
+    text-align: center !important;
+}
+.navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > a:after {
+    float: right;
+    content: "\e080";
+}
+.navbar-nav li:last-child > .dropdown-menu .dropdown-submenu > .dropdown-menu {
+    right: -21%;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown-menu > li > a {
+    color: black;
+}
+.dropdown-menu {
+    color: #fff;
+    border-radius: 0px;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-image: initial;
+    background-color: lightgrey;
+}
+
+/* Content Field Design */
+.field--label {
+    font-size: 18px;
+    padding-right: 50px;
+}
+
+.field--item{
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-right:50px;
+}
+
+/*.group-right > .field--item{
+    position: absolute;
+    bottom: 0;
+}*/
+
+/* For overview teaser list */
+.ds-3col-stacked-fluid{
+    border-bottom: 0.5px solid #e6e6e6;
+}
+
+/* For general public teaser list */
+.ds-3col-stacked{
+    border-bottom: 0.5px solid #e6e6e6;
+}
+
+/* For event overview full content - image */
+.layout__region--first-above{
+    margin-top: 15px;
+}
+
+/* For event overview full content - venue */
+.layout__region--second-above{
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-left: 0.5px solid #e6e6e6;
+    height: 70%
+}
+
+/* For event overview full content - MF event */
+.layout__region--first-below{
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 0.5px solid #e6e6e6;
+}
+
+/* Change the header font size - MF event*/
+.layout__region--first-below h2{
+    font-size: 20px;
+}
+
+/* For event overview full content - GP event*/
+.layout__region--second-below{
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 0.5px solid #e6e6e6;
+}
+
+/* Change the header font size - GP event*/
+.layout__region--second-below h2{
+    font-size: 20px;
+}
+
+/* For event overview full content - description */
+.layout__region--bottom{
+    margin-top: 15px;
+    pading-top: 15px;
+    padding-left: 15px;
+    border-left: 0.5px solid #e6e6e6;
+}
+
+/* START of css for RnG registration page */
+/* To totally remove the person type radiobutton part */
+.registration-default-registration-add-form.registration-form div.person-controls.form-group.js-form-wrapper.form-wrapper fieldset{
+    display: none;
+}
+/* To totally remove the registrants radiobutton part */
+.registration-default-registration-add-form.registration-form #ajax-wrapper-people-registrants fieldset{
+    display: none;
+}
+
+/* BEFORE CLICK on creating new attendee registration button - to hide everything*/
+.registration-default-registration-add-form.registration-form #edit-people{
+    visibility: hidden;
+}
+/* BEFORE CLICK on creating new attendee registration button - to only show select person div */
+.registration-default-registration-add-form.registration-form #edit-people-registrants-entities-person{
+    visibility: visible;
+}
+
+/* AFTER CLICK on creating new attendee registration button - to only show create new contact form */
+.registration-default-registration-add-form.registration-form div.js-form-wrapper.form-wrapper.form-item.js-form-item.panel.panel-default{
+    visibility: visible;
+    margin-left: -6px;
+    margin-top: -20px;
+}
+
+/* AFTER REGISTERING USER SUCCESS - Show the output */
+.registration-default-registration-add-form.registration-form #ajax-wrapper-people-registrants{
+    visibility: visible;
+    margin-left: -6px;
+}
+
+/* AFTER REGISTERING USER SUCCESS - The output's CHANGE button */
+.registration-default-registration-add-form.registration-form #ajax-wrapper-people-registrants button{
+    margin-left: 10px;
+}
+/* END of css for RnG registration page */
+
+/* to change RNG registration list height*/
+.contextual-region.view.view-rng-registrations-node.view-id-rng_registrations_node .view-content div.table-responsive{
+    height: 300px;
+}
+
+/* RNG Registration CONFIRM button css */
+.registration-default-registration-add-form.registration-form #edit-submit{
+    text-indent: -9999px;
+    line-height: 0;
+    /* Collapse the original line */
+}
+
+/* RNG Registration CONFIRM button css */
+.registration-default-registration-add-form.registration-form #edit-submit::after{
+    content: "Confirm";
+    text-indent: 0;
+    display: block;
+    height: 12px;
+    width: 55px;
+    /* New content takes up original line height */
+}
+
+/* Registration List (RNG) - Hide EDIT of Operations */
+.views-element-container.contextual-region.form-group .table.table-hover.table-striped .views-field.views-field-operations .links.btn-group.dropdown .dropdown-menu li:nth-of-type(2){
+    display: none;
+}
+
+/* Registration List (RNG) - Hide VIEW  of Operations */
+.views-element-container.contextual-region.form-group .table.table-hover.table-striped .views-field.views-field-operations .links.btn-group.dropdown .button.js-form-submit.form-submit.btn-default.btn-xs.btn{
+    display: none;
+}

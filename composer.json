@@ -1,0 +1,7 @@
+{
+  "name": "didymo/bt_subtheme",
+  "type": "drupal-theme",
+  "description": "A Bootstrap subtheme used for service sites",
+  "homepage": "https://github.com/didymo/bt_subtheme",
+  "license": "GPL-2.0+"
+}
