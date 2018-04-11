@@ -15,7 +15,7 @@
 .dropdown-submenu > .dropdown-menu {
     top: 0;
     left: 100%;
-    padding: 0px;
+    padding: 0;
 }
 
 .dropdown-submenu:hover > .dropdown-menu {
@@ -48,7 +48,7 @@
     border-radius: 6px 0 6px 6px;
 }
 .navbar-nav li:last-child > .dropdown-menu {
-    left: 0px;
+    left: 0;
     right: auto;
 }
 .navbar-nav li:last-child > .dropdown-menu a {
@@ -69,7 +69,7 @@
 }
 .dropdown-menu {
     color: #fff;
-    border-radius: 0px;
+    border-radius: 0;
 }
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background-image: initial;
@@ -144,7 +144,7 @@
 /* For event overview full content - description */
 .layout__region--bottom{
     margin-top: 15px;
-    pading-top: 15px;
+    padding-top: 15px;
     padding-left: 15px;
     border-left: 0.5px solid #e6e6e6;
 }
