@@ -4,9 +4,11 @@
 .nav > li > a:focus {
     background-color: initial;
 }
+
 .navbar-toggle .icon-bar {
     background-color: #333;
 }
+
 /* Menu multilevel */
 .dropdown-submenu {
     position: relative;
