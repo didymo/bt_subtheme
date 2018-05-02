@@ -1,29 +1,10 @@
-<!-- @file Instructions on how to sub-theme the Drupal Bootstrap base theme using the CDN Starterkit. -->
-<!-- @defgroup sub_theming_cdn -->
-<!-- @ingroup sub_theming -->
-# CDN Starterkit
+# BT_Subtheme
 
-The CDN Starterkit is rather simple to set up. You don't have to do anything
-until you wish to override the default [Drupal Bootstrap] base theme settings
-or provide additional custom CSS.
+BT_Subtheme provides a basic modification to the overall design and style of the forms and pages within the system.
+If any additions or changes are required to the system they can be made by editing the style.css file.
 
-- [Prerequisite](#prerequisite)
-- [Override Styles](#styles)
-- [Override Settings](#settings)
-- [Override Templates and Theme Functions](#registry)
+## Drupal Bootstrap
 
-## Prerequisite
-Read the @link subtheme Sub-theming @endlink parent topic.
-
-## Override Styles {#styles}
-Open `./THEMENAME/css/style.css` and modify the file to your liking.
-
-## Override Settings {#settings}
-Please refer to the @link theme_settings Sub-theme Settings @endlink topic.
-
-## Override Templates and Theme Functions {#registry}
-Please refer to the @link registry Theme Registry @endlink topic.
-
-[Drupal Bootstrap]: https://www.drupal.org/project/bootstrap
-[Bootstrap Framework]: http://getbootstrap.com
-[jsDelivr CDN]: http://www.jsdelivr.com
+This uses Drupal Bootstrap as a base, keeping the main look and feel.
+Bootstrap provides a guide to layouts of a system and other styling suggestions.
+Find out more information here: https://www.drupal.org/project/bootstrap
